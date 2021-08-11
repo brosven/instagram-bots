@@ -1,0 +1,49 @@
+html,
+body {
+  height: 100%;
+  min-width: $mobile-width;
+
+  font-family: "Visuelt Pro", "Arial", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  font-style: normal;
+  line-height: 24px;
+  color: $main-gray;
+
+  padding: 0;
+  margin: 0;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.page-main {
+  flex: 1 0 auto;
+}
+.page-footer {
+  flex: 0 0 auto;
+}
+
+.container {
+  max-width: 1392px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  margin: -1px;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  border: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

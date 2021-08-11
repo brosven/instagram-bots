@@ -1,0 +1,43 @@
+.main-nav {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.main-nav__items-wrapper {
+  padding-top: 15px;
+}
+
+.main-nav__toggle {
+  width: 32px;
+  height: 32px;
+  background-image: url("../../img/icon-sandwich.svg");
+  background-position: 50% 43%;
+}
+
+.main-nav__opened .main-nav__toggle {
+  background-image: url(../../img/icon-cross.svg);
+}
+
+.main-nav__btn {
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+
+  cursor: pointer;
+}
+
+.main-nav__btn-text {
+  font-size: 36px;
+  &:hover {
+    color: $main-gray;
+  }
+}
+
+.main-nav__btn-text--active {
+  color: $blue;
+}
+
+.main-nav__site-list {
+  padding-bottom: 270px;
+}

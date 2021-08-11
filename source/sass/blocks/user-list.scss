@@ -1,0 +1,30 @@
+.user-list__icon-login {
+  width: 40px;
+  height: 40px;
+}
+
+.user-list__text-login {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .user-list__icon-login {
+    display: none;
+  }
+
+  .user-list__login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 220px;
+    height: 48px;
+    background-color: $blue;
+    border-radius: 16px;
+  }
+
+  .user-list__text-login {
+    color: $main-white;
+    display: inline;
+  }
+}

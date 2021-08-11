@@ -1,0 +1,26 @@
+.page-header {
+  position: relative;
+  width: $mobile-width;
+
+  padding: 20px 20px 0px;
+}
+
+.page-header__logo-text {
+  padding-left: 48px;
+  padding-bottom: 20px;
+
+  font-size: 14px;
+  color: $blue;
+}
+
+.page-header__nav-toggle {
+  position: absolute;
+  left: 8px;
+  top: 16px;
+}
+
+.page-header__user-list {
+  position: absolute;
+  left: 300px;
+  top: 12px;
+}

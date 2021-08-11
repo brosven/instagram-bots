@@ -1,0 +1,22 @@
+.site-list {
+  display: flex;
+  flex-direction: column;
+
+  font-size: 36px;
+  line-height: 45px;
+}
+.site-list__item-tittle {
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.site-list__item-link {
+  color: $main-black;
+
+  &:hover {
+    color: $blue;
+  }
+  &:active {
+    color: $main-gray;
+  }
+}
