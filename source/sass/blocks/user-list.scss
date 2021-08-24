@@ -21,6 +21,13 @@
     height: 48px;
     background-color: $blue;
     border-radius: 16px;
+
+    &:hover {
+      background-color: $blue-sky;
+    }
+    &:active {
+      background-color: $main-gray;
+    }
   }
 
   .user-list__text-login {

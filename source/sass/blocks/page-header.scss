@@ -1,13 +1,17 @@
 .page-header {
   position: relative;
-  width: $mobile-width;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
 
-  padding: 20px 20px 0px;
+.page-header__logo {
+  margin-left: 48px;
 }
 
 .page-header__logo-text {
-  padding-left: 48px;
-  padding-bottom: 20px;
+  display: inline-block;
+
+  width: 75px;
 
   font-size: 14px;
   color: $blue;
@@ -23,4 +27,59 @@
   position: absolute;
   left: 300px;
   top: 12px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    padding-top: 30px;
+  }
+
+  .page-header__logo {
+    margin-left: 60px;
+  }
+
+  .page-header__logo-text {
+    width: 97px;
+
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .page-header__nav-toggle {
+    top: 25px;
+    left: 45px;
+  }
+
+  .page-header__user-list {
+    left: 444px;
+    top: 16px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    display: flex;
+    justify-content: space-between;
+
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+
+  .page-header__nav-toggle {
+    display: none;
+  }
+
+  .page-header__logo {
+    margin-left: 0;
+  }
+
+  .page-header__logo-text {
+    padding-top: 12px;
+  }
+
+  .page-header__user-list {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
 }

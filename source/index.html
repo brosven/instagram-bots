@@ -10,7 +10,7 @@
     <title>Instagram bots</title>
   </head>
   <body>
-    <header class="page-header">
+    <header class="page-header container">
       <a href="#" class="page-header__logo">
         <p class="page-header__logo-text">Инстаботы</p>
       </a>
@@ -68,15 +68,75 @@
         </ul>
       </nav>
     </header>
-    <main class="page-main"></main>
+    <main class="page-main">
+      <h1 class="page-main__header visually-hidden">Инстаграм боты</h1>
+      <section class="distribution container">
+        <h2 class="distribution__header visually-hidden">Рассылка</h2>
+        <p class="distribution__text-header">
+          Высокий уровень вовлечения представителей
+        </p>
+        <form action="post" class="distribution__form">
+          <div class="distribution__buttons-wrapper">
+            <label for="distribution__text-field"
+              ><input
+                type="text"
+                placeholder="Введите свой e-mail"
+                class="distribution__text-field"
+                id="distribution__text-field"
+              />
+              <span class="visually-hidden">Введите свой e-mail</span>
+            </label>
+            <button class="distribution__submit">Отправить</button>
+          </div>
+          <p class="distribution__description-text">
+            Нажимая на кнопку вы соглашаетесь на обработку
+          </p>
+          <span
+            class="
+              distribution__description-text
+              distribution__description-text--highlighted
+            "
+            >персональных данных</span
+          >
+        </form>
+        <a href="#" class="distribution__text-continue">
+          <svg
+            width="24"
+            height="32"
+            viewBox="0 0 24 32"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              x="1"
+              y="1"
+              width="22"
+              height="30"
+              rx="11"
+              stroke="white"
+              stroke-width="2"
+            />
+            <path
+              d="M12 13L12 7"
+              stroke="white"
+              stroke-width="2"
+              stroke-linecap="round"
+            />
+          </svg>
+          Листайте дальше
+        </a>
+      </section>
+    </main>
     <footer class="page-footer"></footer>
     <script>
-      const mainNavWrapper = document.querySelector(".main-nav__items-wrapper");
       const mainNavToggle = document.querySelector(".main-nav__toggle");
       const mainNav = document.querySelector(".main-nav");
 
+      document.addEventListener("DOMContentLoaded", () => {
+        mainNav.classList.remove("main-nav__opened");
+      });
+
       mainNavToggle.addEventListener("click", () => {
-        mainNavWrapper.classList.toggle("visually-hidden");
         mainNav.classList.toggle("main-nav__opened");
       });
     </script>

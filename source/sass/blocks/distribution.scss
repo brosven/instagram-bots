@@ -1,0 +1,167 @@
+.distribution {
+  min-height: 692px;
+
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  background-color: #8ea1fc;
+  background-image: url("../../img/distribution-small.png"),
+    linear-gradient(34deg, #e0c3fc 9%, #ffffff 61%, #ffffff 100%);
+  background-repeat: no-repeat;
+  background-position: 50% 90%;
+}
+
+.distribution__text-header {
+  font-size: 36px;
+  line-height: 45px;
+  color: $main-black;
+}
+
+.distribution__form {
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+.distribution__buttons-wrapper {
+  position: relative;
+}
+
+.distribution__description-text {
+  display: flex;
+  flex-direction: column;
+
+  padding-left: 16px;
+
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+
+  color: $gray;
+}
+
+.distribution__text-field {
+  width: 320px;
+  height: 56px;
+
+  padding-left: 16px;
+  padding-right: 140px;
+  margin-bottom: 16px;
+
+  border-radius: 16px;
+  border-color: transparent;
+  background-color: $white-dark;
+  box-shadow: -2px 4px 20px rgba(25, 25, 25, 0.025);
+  outline: none;
+
+  font-family: "Visuelt Pro";
+  font-size: 14px;
+  line-height: 19px;
+
+  color: $main-gray;
+}
+
+.distribution__description-text--highlighted {
+  color: $blue;
+}
+
+.distribution__text-continue {
+  display: none;
+}
+
+.distribution__submit {
+  position: absolute;
+  top: 8px;
+  left: 190px;
+
+  width: 122px;
+  height: 40px;
+
+  border-radius: 16px;
+  border-color: transparent;
+
+  font-family: "Visuelt Pro";
+  font-weight: 500;
+  color: $blue;
+
+  background-color: $main-white;
+
+  -webkit-box-shadow: 0 1px 5px 0px rgba(34, 60, 80, 0.03);
+  -moz-box-shadow: 0 1px 5px 0px rgba(34, 60, 80, 0.03);
+  box-shadow: 0 1px 5px 0px rgba(34, 60, 80, 0.03);
+
+  cursor: pointer;
+}
+
+@media (min-width: $tablet-width) {
+  .distribution {
+    min-height: 944px;
+    background-image: url("../../img/distribution-medium.png"),
+      linear-gradient(34deg, #e0c3fc 9%, #ffffff 61%, #ffffff 100%);
+  }
+
+  .distribution__text-header {
+    font-size: 56px;
+    line-height: 70px;
+  }
+
+  .distribution__text-field {
+    width: 450px;
+    height: 64px;
+
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .distribution__submit {
+    top: 12px;
+    left: 299px;
+
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .distribution {
+    min-height: 720px;
+
+    padding-top: 120px;
+    padding-bottom: 80px;
+
+    background-image: url("../../img/distribution-big.png"),
+      linear-gradient(20deg, #e0c3fc 9%, #ffffff 61%, #ffffff 100%);
+
+    background-position: 91% 0;
+  }
+
+  .distribution__text-header {
+    width: 628px;
+  }
+
+  .distribution__text-field {
+    width: 465px;
+
+    padding-right: 145px;
+  }
+
+  .distribution__submit {
+    left: 334px;
+  }
+
+  .distribution__form {
+    margin-bottom: 110px;
+  }
+
+  .distribution__text-continue {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 175px;
+
+    color: $main-white;
+
+    font-size: 16px;
+    line-height: 22px;
+  }
+}

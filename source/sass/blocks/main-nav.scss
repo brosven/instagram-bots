@@ -5,7 +5,7 @@
 }
 
 .main-nav__items-wrapper {
-  padding-top: 15px;
+  display: none;
 }
 
 .main-nav__toggle {
@@ -16,7 +16,12 @@
 }
 
 .main-nav__opened .main-nav__toggle {
-  background-image: url(../../img/icon-cross.svg);
+  background-image: url("../../img/icon-cross.svg");
+}
+
+.main-nav__opened .main-nav__items-wrapper {
+  display: block;
+  padding-top: 15px;
 }
 
 .main-nav__btn {
@@ -40,4 +45,41 @@
 
 .main-nav__site-list {
   padding-bottom: 270px;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav__btn-text {
+    font-size: 56px;
+    line-height: 70px;
+  }
+
+  .main-nav__site-list {
+    padding-bottom: 156px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav {
+    flex-direction: row;
+    justify-content: space-between;
+    min-width: 890px;
+  }
+
+  .main-nav__items-wrapper {
+    display: flex;
+    flex-direction: row;
+
+    padding: 0;
+    margin-right: 16px;
+  }
+
+  .main-nav__btn-text {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .main-nav__site-list {
+    padding-bottom: 0;
+    margin-right: 97px;
+  }
 }
