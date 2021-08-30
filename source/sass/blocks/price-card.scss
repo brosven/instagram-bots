@@ -1,0 +1,74 @@
+.price-card {
+  width: 320px;
+  padding: 16px;
+
+  border-radius: 20px;
+
+  -webkit-box-shadow: 1px 1px 8px 0px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 1px 1px 8px 0px rgba(34, 60, 80, 0.2);
+  box-shadow: 1px 1px 8px 0px rgba(34, 60, 80, 0.2);
+}
+
+.price-card__header {
+  width: 100%;
+
+  font-size: 18px;
+  line-height: 23px;
+
+  color: $main-black;
+
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.price-card__header--price {
+  color: $blue;
+}
+
+.price-card__header--month {
+  color: $main-gray;
+}
+
+.price-card__btn-learn-more {
+  width: 288px;
+  height: 48px;
+
+  margin: 0 auto 8px;
+
+  -webkit-box-shadow: 1px 1px 8px 0px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 1px 1px 8px 0px rgba(34, 60, 80, 0.2);
+  box-shadow: 1px 1px 8px 0px rgba(34, 60, 80, 0.2);
+}
+
+.price-card__possibilities-list {
+  padding-top: 16px;
+  margin-bottom: 40px;
+}
+
+@media (min-width: $tablet-width) {
+  .price-card {
+    width: 324px;
+  }
+
+  .price-card__header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .price-card__possibilities-list {
+    padding-top: 24px;
+  }
+
+  .price-card__btn-learn-more {
+    width: 276px;
+    height: 56px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .price-card {
+    width: 318px;
+  }
+}

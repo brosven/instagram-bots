@@ -3,8 +3,22 @@
   height: 40px;
 }
 
-.user-list__text-login {
-  display: none;
+@media (max-width: $tablet-width - 1px) {
+  .user-list__login {
+    background-color: transparent;
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+
+  .user-list__text-login {
+    display: none;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -13,25 +27,7 @@
   }
 
   .user-list__login {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
     width: 220px;
     height: 48px;
-    background-color: $blue;
-    border-radius: 16px;
-
-    &:hover {
-      background-color: $blue-sky;
-    }
-    &:active {
-      background-color: $main-gray;
-    }
-  }
-
-  .user-list__text-login {
-    color: $main-white;
-    display: inline;
   }
 }

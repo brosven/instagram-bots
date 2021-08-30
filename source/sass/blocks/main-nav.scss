@@ -11,12 +11,19 @@
 .main-nav__toggle {
   width: 32px;
   height: 32px;
-  background-image: url("../../img/icon-sandwich.svg");
+  background-image: url("../img/icon-sandwich.svg");
   background-position: 50% 43%;
+
+  &:hover {
+    opacity: 0.8;
+  }
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .main-nav__opened .main-nav__toggle {
-  background-image: url("../../img/icon-cross.svg");
+  background-image: url("../img/icon-cross.svg");
 }
 
 .main-nav__opened .main-nav__items-wrapper {
@@ -71,6 +78,13 @@
 
     padding: 0;
     margin-right: 16px;
+  }
+
+  .main-nav__opened .main-nav__items-wrapper {
+    display: flex;
+    align-items: center;
+
+    padding: 0;
   }
 
   .main-nav__btn-text {

@@ -1,0 +1,116 @@
+.card__header {
+  display: flex;
+  align-items: center;
+
+  min-height: 64px;
+
+  line-height: 23px;
+  color: $main-black;
+}
+
+.card__header--glasses {
+  &::before {
+    content: "";
+
+    display: block;
+
+    width: 36px;
+    height: 45px;
+
+    margin-right: 12px;
+
+    background: url("../../img/glasses-smile.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+
+.card__header--tongue {
+  &::before {
+    content: "";
+
+    display: block;
+
+    width: 36px;
+    height: 45px;
+
+    margin-right: 12px;
+
+    background: url("../../img/tongue-smile.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+
+.card__header--brutal {
+  &::before {
+    content: "";
+
+    display: block;
+
+    width: 36px;
+    height: 45px;
+
+    margin-right: 12px;
+
+    background: url("../../img/brutal-smile.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+
+.card__text {
+  width: 311px;
+
+  padding-top: 12px;
+  padding-bottom: 16px;
+
+  font-size: 14px;
+  line-height: 19px;
+}
+
+@media (min-width: $tablet-width) {
+  .card__header {
+    min-height: 80px;
+
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  .card__header--glasses {
+    &::before {
+      width: 56px;
+      height: 70px;
+    }
+  }
+
+  .card__header--tongue {
+    &::before {
+      width: 56px;
+      height: 70px;
+    }
+  }
+
+  .card__header--brutal {
+    &::before {
+      width: 56px;
+      height: 70px;
+    }
+  }
+
+  .card__text {
+    width: 624px;
+
+    padding-top: 16px;
+    padding-bottom: 24px;
+
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .card__text {
+    width: 389px;
+  }
+}

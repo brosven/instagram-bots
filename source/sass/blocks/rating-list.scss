@@ -1,0 +1,21 @@
+.rating-list {
+  display: flex;
+  flex-wrap: wrap;
+
+  width: 100px;
+}
+
+.rating-list__item {
+  margin-right: 4px;
+}
+
+@media (min-width: $tablet-width) {
+  .rating-list {
+    width: 140px;
+  }
+
+  .rating-list__star-icon {
+    width: 24px;
+    height: 24px;
+  }
+}

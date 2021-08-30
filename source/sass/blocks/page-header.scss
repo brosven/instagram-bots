@@ -5,22 +5,14 @@
 }
 
 .page-header__logo {
-  margin-left: 48px;
-}
-
-.page-header__logo-text {
   display: inline-block;
-
-  width: 75px;
-
-  font-size: 14px;
-  color: $blue;
+  margin-left: 48px;
 }
 
 .page-header__nav-toggle {
   position: absolute;
   left: 8px;
-  top: 16px;
+  top: 14px;
 }
 
 .page-header__user-list {
@@ -31,22 +23,22 @@
 
 @media (min-width: $tablet-width) {
   .page-header {
-    padding-top: 30px;
+    padding-top: 27px;
   }
 
   .page-header__logo {
+    width: 97px;
+    height: 24px;
     margin-left: 60px;
   }
 
-  .page-header__logo-text {
-    width: 97px;
-
-    font-size: 18px;
-    line-height: 24px;
+  .page-header__logo img {
+    width: 100%;
+    height: 100%;
   }
 
   .page-header__nav-toggle {
-    top: 25px;
+    top: 24px;
     left: 45px;
   }
 
@@ -70,11 +62,8 @@
   }
 
   .page-header__logo {
+    margin-top: 10px;
     margin-left: 0;
-  }
-
-  .page-header__logo-text {
-    padding-top: 12px;
   }
 
   .page-header__user-list {
