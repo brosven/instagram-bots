@@ -846,11 +846,7 @@
             <input
               type="email"
               placeholder="Введите свой e-mail"
-              class="
-                distribution__text-field
-                text-field
-                distribution__text-field--gray-light
-              "
+              class="distribution__text-field text-field text-field--gray-light"
               aria-label="Поле ввода e-mail"
             />
             <button
@@ -969,37 +965,83 @@
           </div>
         </div>
       </section>
-      <section class="feedback">
-        <h2 class="feedback__header">Обратная связь</h2>
-        <p class="feedback__text">
-          Поговорите с одним из наших сотрудников, чтобы узнать, сколько мы
-          можем получить для вас целевой аудитории за месяц с минимальными
-          усилиями с вашей стороны
-        </p>
-        <form action="post" class="feedback-form feedback__form">
-          <input type="email" class="feedback-form__item" />
-          <input type="tel" class="feedback-form__item" />
-          <input type="text" class="feedback-form__item" />
-          <input type="text" class="feedback-form__item" />
-
-          <button type="submit" class="feedback-form__button-submit">
-            Отправить заявку
-          </button>
-          <p class="feedback__text-note">
-            Нажимая на кнопку вы соглашаетесь на обработку
-            <span class="feedback__text-note">персональных данных</span>
+      <section class="feedback container">
+        <div class="feedback__content-wrapper">
+          <h2 class="feedback__header">Обратная связь</h2>
+          <p class="feedback__text">
+            Поговорите с одним из наших сотрудников, чтобы узнать, сколько мы
+            можем получить для вас целевой аудитории за месяц с минимальными
+            усилиями с вашей стороны
           </p>
-        </form>
+          <form action="post" class="feedback-form feedback__form">
+            <input
+              type="email"
+              placeholder="Введите свой e-mail"
+              aria-label="Полле ввода e-mail"
+              class="feedback-form__item text-field text-field--gray-light"
+            />
+            <input
+              type="tel"
+              placeholder="Номер мобильного телефона"
+              aria-label="Поле ввода телефона"
+              class="feedback-form__item text-field text-field--gray-light"
+            />
+            <input
+              type="text"
+              placeholder="Никнейм в Instagram"
+              aria-label="Поле ввода инстаграм псевдонима"
+              class="feedback-form__item text-field text-field--gray-light"
+            />
+            <textarea
+              type="text"
+              aria-label="Поле для ввода вопроса о росте в Instagram"
+              placeholder="Что вы бы хотели спросить о росте в Instagram"
+              class="
+                feedback-form__item feedback-form__item--tall
+                text-field text-field--gray-light
+              "
+            ></textarea>
+
+            <div class="feedback-form__button-wrapper">
+              <button
+                type="submit"
+                aria-label="Кнопка отправки формы"
+                class="feedback-form__button-submit main-btn"
+              >
+                Отправить заявку
+              </button>
+              <p class="feedback-form__text-note">
+                Нажимая на кнопку вы соглашаетесь на обработку
+                <span
+                  class="
+                    feedback-form__text-note
+                    feedback-form__text-note--highlighted
+                  "
+                  >персональных данных</span
+                >
+              </p>
+            </div>
+          </form>
+        </div>
       </section>
     </main>
-    <footer class="page-footer"></footer>
+    <footer class="page-footer">
+      <a href="#" class="page-footer__logo">
+        <img
+          src="img/logo-white-mobile.svg"
+          alt="логотип Инстаботы"
+          width="75"
+          height="19"
+        />
+      </a>
+      <p class="page-footer__copyright">© 2021 Copyright reserved Instabots</p>
+      <a href="#" class="page-footer__text-get-back">Вернуться наверх</a>
+    </footer>
     <script>
       const mainNavToggle = document.querySelector(".main-nav__toggle");
       const mainNav = document.querySelector(".main-nav");
 
-      document.addEventListener("DOMContentLoaded", () => {
-        mainNav.classList.remove("main-nav__opened");
-      });
+      mainNav.classList.remove("main-nav__opened");
 
       mainNavToggle.addEventListener("click", () => {
         mainNav.classList.toggle("main-nav__opened");
@@ -1009,16 +1051,16 @@
       let elements = document.querySelectorAll(".question-card");
 
       elements.forEach((el) => {
-        el.classList.add("question-card--closed");
-
         let cardBody = el.querySelector(".question-card__body");
-        cardBody.classList.add("visually-hidden");
-
         let buttonEl = el.querySelector(".question-card__toggle");
+
         buttonEl.addEventListener("click", () => {
           el.classList.toggle("question-card--closed");
           cardBody.classList.toggle("visually-hidden");
         });
+
+        el.classList.add("question-card--closed");
+        cardBody.classList.add("visually-hidden");
       });
     </script>
   </body>

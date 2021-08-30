@@ -21,6 +21,7 @@
 .distribution__text-header {
   font-size: 36px;
   line-height: 45px;
+  word-break: break-word;
   color: $main-black;
 }
 
@@ -49,10 +50,8 @@
 .distribution__text-field {
   width: 320px;
   height: 56px;
-}
 
-.distribution__text-field--gray-light {
-  background-color: $gray-light;
+  margin-bottom: 16px;
 }
 
 .distribution__description-text--highlighted {

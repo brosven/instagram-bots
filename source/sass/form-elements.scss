@@ -5,6 +5,10 @@
 
   background-color: $blue;
   border-radius: 16px;
+  border-color: transparent;
+
+  font-size: 14px;
+  line-height: 19px;
 
   color: $main-white;
 
@@ -36,7 +40,6 @@
 .text-field {
   padding-left: 16px;
   padding-right: 140px;
-  margin-bottom: 16px;
 
   border-radius: 16px;
   border-color: transparent;
@@ -49,4 +52,20 @@
   line-height: 19px;
 
   color: $main-gray;
+}
+
+.text-field--gray-light {
+  background-color: $gray-light;
+}
+
+@media (min-width: $tablet-width) {
+  .main-btn {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .text-field {
+    font-size: 18px;
+    line-height: 24px;
+  }
 }
