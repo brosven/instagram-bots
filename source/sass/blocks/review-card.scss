@@ -32,6 +32,7 @@
 }
 
 .review-card__date {
+  max-width: 75px;
   margin-left: auto;
   padding-top: 6px;
 
@@ -71,6 +72,7 @@
   }
 
   .review-card__date {
+    max-width: 95px;
     padding-top: 0;
 
     font-size: 18px;

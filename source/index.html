@@ -10,7 +10,7 @@
     <title>Instagram bots</title>
   </head>
   <body>
-    <header class="page-header container">
+    <header id="page-header" class="page-header container">
       <a href="#" class="page-header__logo">
         <img
           src="img/logo-mobile.svg"
@@ -32,19 +32,21 @@
               <span class="site-list__item-tittle">Меню</span>
             </li>
             <li class="site-list__item">
-              <a class="site-list__item-link">О компании</a>
+              <a href="#about-us" class="site-list__item-link">О компании</a>
             </li>
             <li class="site-list__item">
-              <a href="#" class="site-list__item-link">Тарифы</a>
+              <a href="#tariff" class="site-list__item-link">Тарифы</a>
             </li>
             <li class="site-list__item">
-              <a href="#" class="site-list__item-link">Отзывы</a>
+              <a href="#reviews" class="site-list__item-link">Отзывы</a>
             </li>
             <li class="site-list__item">
-              <a href="#" class="site-list__item-link">Q&A</a>
+              <a href="#questions" class="site-list__item-link">Q&A</a>
             </li>
             <li class="site-list__item">
-              <a href="#" class="site-list__item-link">Обратная связь</a>
+              <a href="#feedback" class="site-list__item-link"
+                >Обратная связь</a
+              >
             </li>
           </ul>
           <button
@@ -78,7 +80,7 @@
     </header>
     <main class="page-main">
       <h1 class="page-main__header visually-hidden">Инстаграм боты</h1>
-      <section class="distribution container">
+      <section id="distribution" class="distribution container">
         <h2 class="distribution__header visually-hidden">Рассылка</h2>
         <p class="distribution__text-header">
           Высокий уровень вовлечения представителей
@@ -109,14 +111,14 @@
             >
           </p>
         </form>
-        <a href="#" class="distribution__text-continue">
+        <a href="#advantages" class="distribution__text-continue">
           <svg width="24" height="32" viewBox="0 0 24 32">
             <use xlink:href="img/sprite.svg#icon-wheeldown"></use>
           </svg>
           Листайте дальше
         </a>
       </section>
-      <section class="advantages container">
+      <section id="advantages" class="advantages container">
         <h2 class="advantages__header">Наши преимущества</h2>
         <div class="advantages__card-wrapper">
           <div class="card advantages__card">
@@ -160,7 +162,7 @@
           </div>
         </div>
       </section>
-      <section class="about-us container">
+      <section id="about-us" class="about-us container">
         <h2 class="about-us__header">Как мы работаем</h2>
         <div class="about-us__wrapper">
           <div class="scroll-panel about-us__scroll-panel">
@@ -214,7 +216,7 @@
           >
         </div>
       </section>
-      <section class="tariff container">
+      <section id="tariff" class="tariff container">
         <h2 class="tariff__header">Наши тарифы</h2>
         <div class="tariff__cards-wrapper">
           <div class="price-card tariff__card">
@@ -515,7 +517,7 @@
           </div>
         </div>
       </section>
-      <section class="reviews container">
+      <section id="reviews" class="reviews container">
         <h2 class="reviews__header">Отзывы</h2>
         <div class="reviews__cards-wrapper">
           <div class="review-card reviews__card">
@@ -868,7 +870,7 @@
           </p>
         </form>
       </section>
-      <section class="questions container">
+      <section id="questions" class="questions container">
         <h2 class="questions__header">Часто задаваемые вопросы</h2>
         <div class="questions__cards-wrapper">
           <div class="question-card questions__item">
@@ -965,7 +967,7 @@
           </div>
         </div>
       </section>
-      <section class="feedback container">
+      <section id="feedback" class="feedback container">
         <div class="feedback__content-wrapper">
           <h2 class="feedback__header">Обратная связь</h2>
           <p class="feedback__text">
@@ -1025,17 +1027,23 @@
         </div>
       </section>
     </main>
-    <footer class="page-footer">
-      <a href="#" class="page-footer__logo">
-        <img
-          src="img/logo-white-mobile.svg"
-          alt="логотип Инстаботы"
-          width="75"
-          height="19"
-        />
-      </a>
-      <p class="page-footer__copyright">© 2021 Copyright reserved Instabots</p>
-      <a href="#" class="page-footer__text-get-back">Вернуться наверх</a>
+    <footer class="page-footer container">
+      <div class="page-footer__content-wrapper">
+        <a href="#" class="page-footer__logo">
+          <img
+            src="img/logo-white-mobile.svg"
+            alt="логотип Инстаботы"
+            width="75"
+            height="19"
+          />
+        </a>
+        <p class="page-footer__copyright">
+          © 2021 Copyright reserved Instabots
+        </p>
+      </div>
+      <a href="#page-header" class="page-footer__text-get-back">
+        <span class="page-footer__hidden-word">Вернуться</span> наверх</a
+      >
     </footer>
     <script>
       const mainNavToggle = document.querySelector(".main-nav__toggle");

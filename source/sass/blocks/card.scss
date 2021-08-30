@@ -2,6 +2,7 @@
   display: flex;
   align-items: center;
 
+  max-width: 311px;
   min-height: 64px;
 
   line-height: 23px;
@@ -72,6 +73,7 @@
 
 @media (min-width: $tablet-width) {
   .card__header {
+    max-width: 624px;
     min-height: 80px;
 
     font-size: 24px;
@@ -111,6 +113,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .card__header {
+    max-width: 389px;
+  }
+
   .card__text {
     width: 389px;
   }
