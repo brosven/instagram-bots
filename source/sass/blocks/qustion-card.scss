@@ -36,7 +36,7 @@
   height: 32px;
   padding: 0;
   border: none;
-  background-image: url("../../img/icon-cross-small.svg");
+  background-image: url("../img/icon-cross-small.svg");
   background-position: 55% 40%;
   background-repeat: no-repeat;
   background-color: transparent;
@@ -44,7 +44,7 @@
 }
 
 .question-card--closed .question-card__toggle {
-  background-image: url("../../img/icon-plus-small.svg");
+  background-image: url("../img/icon-plus-small.svg");
 }
 
 @media (min-width: $tablet-width) {

@@ -2,7 +2,7 @@
   min-height: 692px;
   padding-top: 40px;
   padding-bottom: 40px;
-  background-image: url("../../img/distribution-mobile.png"),
+  background-image: url("../img/distribution-mobile.png"),
     linear-gradient(34deg, #e0c3fc 9%, #ffffff 61%, #ffffff 100%);
   background-position: 50% 90%;
   background-repeat: no-repeat;
@@ -11,7 +11,7 @@
 
 .distribution--sale {
   padding-top: 354px;
-  background-image: url("../../img/distribution-sale-mobile.png");
+  background-image: url("../img/distribution-sale-mobile.png");
   background-position: 50% 0;
   background-color: $main-white;
 }
@@ -73,13 +73,13 @@
 @media (min-width: $tablet-width) {
   .distribution {
     min-height: 944px;
-    background-image: url("../../img/distribution-tablet.png"),
+    background-image: url("../img/distribution-tablet.png"),
       linear-gradient(34deg, #e0c3fc 9%, #ffffff 61%, #ffffff 100%);
   }
 
   .distribution--sale {
     padding-top: 640px;
-    background-image: url("../../img/distribution-sale-tablet.png");
+    background-image: url("../img/distribution-sale-tablet.png");
     background-position: 50% 0;
   }
 
@@ -109,7 +109,7 @@
     padding-top: 120px;
     padding-right: 700px;
     padding-bottom: 80px;
-    background-image: url("../../img/distribution-desktop.png"),
+    background-image: url("../img/distribution-desktop.png"),
       linear-gradient(20deg, #e0c3fc 9%, #ffffff 61%, #ffffff 100%);
     background-position: 91% 0;
   }
@@ -118,7 +118,7 @@
     min-height: 640px;
     padding-right: 56px;
     padding-left: 700px;
-    background-image: url("../../img/distribution-sale-desktop.png");
+    background-image: url("../img/distribution-sale-desktop.png");
     background-position: 1% 0;
   }
 
