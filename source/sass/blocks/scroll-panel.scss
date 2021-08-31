@@ -1,14 +1,12 @@
 .scroll-panel {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
-
+  justify-content: space-between;
   width: 304px;
 }
 
 .scroll-panel__link {
   position: relative;
-
   color: $main-white;
 }
 
@@ -21,14 +19,11 @@
     position: absolute;
     top: 8px;
     left: -24px;
-
-    content: "";
-
     width: 16px;
     height: 0;
-
     border: 0.5px solid $main-white;
     border-radius: 20px;
+    content: "";
   }
 }
 
@@ -45,7 +40,6 @@
     &::before {
       top: 10px;
       left: -36px;
-
       width: 24px;
     }
   }

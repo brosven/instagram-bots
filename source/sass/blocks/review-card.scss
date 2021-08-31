@@ -1,12 +1,10 @@
 .review-card {
-  width: 345px;
-
-  border-radius: 16px;
-  padding: 10px;
-  background-color: $main-white;
-
   -webkit-box-shadow: 1px 1px 8px 0px rgba(34, 60, 80, 0.2);
   -moz-box-shadow: 1px 1px 8px 0px rgba(34, 60, 80, 0.2);
+  width: 345px;
+  padding: 10px;
+  border-radius: 16px;
+  background-color: $main-white;
   box-shadow: 1px 1px 8px 0px rgba(34, 60, 80, 0.2);
 }
 
@@ -15,7 +13,6 @@
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
-
   padding: 12px 6px;
 }
 
@@ -26,16 +23,14 @@
 
 .review-card__profile-name {
   max-width: 140px;
-
-  line-height: 23px;
   color: $main-black;
+  line-height: 23px;
 }
 
 .review-card__date {
   max-width: 75px;
   margin-left: auto;
   padding-top: 6px;
-
   font-size: 14px;
   line-height: 19px;
 }
@@ -43,13 +38,11 @@
 .review-card__body {
   padding: 16px 14px;
   border-radius: 16px;
-
   background-color: $white-dark;
 }
 
 .review-card__text {
   margin-bottom: 16px;
-
   font-size: 14px;
   line-height: 19px;
 }
@@ -66,7 +59,6 @@
 
   .review-card__profile-name {
     max-width: 190px;
-
     font-size: 24px;
     line-height: 24px;
   }
@@ -74,7 +66,6 @@
   .review-card__date {
     max-width: 95px;
     padding-top: 0;
-
     font-size: 18px;
     line-height: 24px;
   }

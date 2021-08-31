@@ -1,14 +1,12 @@
 .distribution {
   min-height: 692px;
-
   padding-top: 40px;
   padding-bottom: 40px;
-
-  background-color: #8ea1fc;
   background-image: url("../../img/distribution-mobile.png"),
     linear-gradient(34deg, #e0c3fc 9%, #ffffff 61%, #ffffff 100%);
-  background-repeat: no-repeat;
   background-position: 50% 90%;
+  background-repeat: no-repeat;
+  background-color: #8ea1fc;
 }
 
 .distribution--sale {
@@ -19,10 +17,10 @@
 }
 
 .distribution__text-header {
+  color: $main-black;
   font-size: 36px;
   line-height: 45px;
   word-break: break-word;
-  color: $main-black;
 }
 
 .distribution__form {
@@ -37,45 +35,38 @@
 .distribution__description-text {
   display: flex;
   flex-direction: column;
-
   padding-left: 16px;
-
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 16px;
-
   color: $gray;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
 }
 
 .distribution__text-field {
   width: 320px;
   height: 56px;
-
   margin-bottom: 16px;
 }
 
 .distribution__description-text--highlighted {
-  color: $blue;
-
   padding: 0;
+  color: $blue;
 }
 
 .distribution__text-continue {
+  fill: none;
   display: none;
 }
 
 .distribution__submit {
+  -webkit-box-shadow: 0 1px 5px 0px rgba(34, 60, 80, 0.03);
+  -moz-box-shadow: 0 1px 5px 0px rgba(34, 60, 80, 0.03);
   position: absolute;
   top: 8px;
   left: 190px;
-
   width: 122px;
   height: 40px;
-
   border-color: transparent;
-
-  -webkit-box-shadow: 0 1px 5px 0px rgba(34, 60, 80, 0.03);
-  -moz-box-shadow: 0 1px 5px 0px rgba(34, 60, 80, 0.03);
   box-shadow: 0 1px 5px 0px rgba(34, 60, 80, 0.03);
 }
 
@@ -100,7 +91,6 @@
   .distribution__text-field {
     width: 450px;
     height: 64px;
-
     font-size: 18px;
     line-height: 24px;
   }
@@ -108,7 +98,6 @@
   .distribution__submit {
     top: 12px;
     left: 299px;
-
     font-size: 18px;
     line-height: 24px;
   }
@@ -117,23 +106,18 @@
 @media (min-width: $desktop-width) {
   .distribution {
     min-height: 720px;
-
     padding-top: 120px;
     padding-right: 700px;
     padding-bottom: 80px;
-
     background-image: url("../../img/distribution-desktop.png"),
       linear-gradient(20deg, #e0c3fc 9%, #ffffff 61%, #ffffff 100%);
-
     background-position: 91% 0;
   }
 
   .distribution--sale {
     min-height: 640px;
-
-    padding-left: 700px;
     padding-right: 56px;
-
+    padding-left: 700px;
     background-image: url("../../img/distribution-sale-desktop.png");
     background-position: 1% 0;
   }
@@ -148,7 +132,6 @@
 
   .distribution__text-field {
     width: 465px;
-
     padding-right: 145px;
   }
 
@@ -162,13 +145,10 @@
 
   .distribution__text-continue {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-
+    justify-content: space-between;
     width: 175px;
-
     color: $main-white;
-
     font-size: 16px;
     line-height: 22px;
   }

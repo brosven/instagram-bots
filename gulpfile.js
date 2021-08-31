@@ -1,12 +1,18 @@
 "use strict";
 
 const {src, dest, series, watch} = require("gulp");
-const plumber = require('gulp-plumber');
-const sass = require('gulp-sass')(require('sass'));
-const sourcemap = require("gulp-sourcemaps");
-const postcss = require('gulp-postcss');
-const autoprefixer = require("autoprefixer");
+const plumber = require("gulp-plumber");
 const server = require("browser-sync").create();
+const sourcemap = require("gulp-sourcemaps");
+const rename = require("gulp-rename");
+
+const sass = require("gulp-sass")(require("sass"));
+const postcss = require("gulp-postcss");
+const autoprefixer = require("autoprefixer");
+const csso = require("gulp-csso");
+const cssDeclarationSorter = require("css-declaration-sorter");
+
+const svgstore = require("gulp-svgstore");
 
 function css () {
     return src("source/sass/style.scss")
@@ -21,10 +27,29 @@ function css () {
     .pipe(postcss([
         autoprefixer()
     ]))
+    .pipe(csso())
+    .pipe(rename("style.min.css"))
     .pipe(sourcemap.write("."))
     .pipe(dest("source/css"))
     .pipe(server.stream());
 }; 
+
+function cssSort () {
+  return src("source/sass/blocks/*.{scss,sass}")
+  .pipe(postcss([
+    cssDeclarationSorter({ order: 'smacss' })
+  ]))
+  .pipe(dest("source/sass/blocks"))
+};
+
+function sprite () {
+    return src("source/img/icon-*.svg")
+    .pipe(svgstore({
+      inlineSvg: true
+    }))
+    .pipe(rename("sprite.svg"))
+    .pipe(dest("source/img"));
+};
 
 function serverStart () {
     server.init({
@@ -41,4 +66,7 @@ function serverStart () {
 
 exports.css = css;
 exports.serverStart = serverStart;
-exports.start = series(css, serverStart);
+exports.sprite = sprite;
+exports.cssSort = cssSort;
+exports.start = series(sprite, css, serverStart);
+

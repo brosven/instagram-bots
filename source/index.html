@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="format-detection" content="telephone=no" />
     <meta name="format-detection" content="address=no" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style.min.css" />
     <title>Instagram bots</title>
   </head>
   <body>
@@ -995,7 +995,6 @@
               class="feedback-form__item text-field text-field--gray-light"
             />
             <textarea
-              type="text"
               aria-label="Поле для ввода вопроса о росте в Instagram"
               placeholder="Что вы бы хотели спросить о росте в Instagram"
               class="
@@ -1056,9 +1055,9 @@
       });
     </script>
     <script>
-      let elements = document.querySelectorAll(".question-card");
+      let questionCards = document.querySelectorAll(".question-card");
 
-      elements.forEach((el) => {
+      questionCards.forEach((el) => {
         let cardBody = el.querySelector(".question-card__body");
         let buttonEl = el.querySelector(".question-card__toggle");
 

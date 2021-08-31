@@ -3,13 +3,11 @@
 }
 .tariff__header {
   margin-bottom: 40px;
-  padding-left: 30px;
   padding-right: 30px;
-
+  padding-left: 30px;
   color: $main-black;
-
-  font-size: 18px;
   font-weight: 500;
+  font-size: 18px;
   line-height: 23px;
   word-break: break-word;
 }
@@ -32,9 +30,8 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
     align-items: flex-start;
-
+    justify-content: space-between;
     width: 672px;
   }
 
@@ -43,10 +40,9 @@
   }
 
   .tariff__header {
+    margin-bottom: 48px;
     font-size: 36px;
     line-height: 40px;
-
-    margin-bottom: 48px;
   }
 }
 

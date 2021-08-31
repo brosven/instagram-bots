@@ -35,7 +35,6 @@
   padding: 0;
   border: 0;
   background-color: transparent;
-
   cursor: pointer;
 }
 
@@ -75,15 +74,13 @@
   .main-nav__items-wrapper {
     display: flex;
     flex-direction: row;
-
-    padding: 0;
     margin-right: 16px;
+    padding: 0;
   }
 
   .main-nav__opened .main-nav__items-wrapper {
     display: flex;
     align-items: center;
-
     padding: 0;
   }
 
@@ -93,7 +90,7 @@
   }
 
   .main-nav__site-list {
-    padding-bottom: 0;
     margin-right: 97px;
+    padding-bottom: 0;
   }
 }

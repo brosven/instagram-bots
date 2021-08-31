@@ -1,72 +1,47 @@
 .card__header {
   display: flex;
   align-items: center;
-
   max-width: 311px;
   min-height: 64px;
-
+  color: $main-black;
   line-height: 23px;
   word-break: break-word;
-  color: $main-black;
 }
 
 .card__header--glasses {
   &::before {
-    content: "";
-
-    display: block;
-
-    width: 36px;
-    height: 45px;
-
-    margin-right: 12px;
-
     background: url("../../img/glasses-smile.png");
-    background-size: contain;
-    background-repeat: no-repeat;
   }
 }
 
 .card__header--tongue {
   &::before {
-    content: "";
-
-    display: block;
-
-    width: 36px;
-    height: 45px;
-
-    margin-right: 12px;
-
     background: url("../../img/tongue-smile.png");
-    background-size: contain;
-    background-repeat: no-repeat;
   }
 }
 
 .card__header--brutal {
   &::before {
-    content: "";
-
-    display: block;
-
-    width: 36px;
-    height: 45px;
-
-    margin-right: 12px;
-
     background: url("../../img/brutal-smile.png");
-    background-size: contain;
-    background-repeat: no-repeat;
   }
+}
+
+.card__header--brutal::before,
+.card__header--glasses::before,
+.card__header--tongue::before {
+  display: block;
+  width: 36px;
+  height: 45px;
+  margin-right: 12px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  content: "";
 }
 
 .card__text {
   width: 311px;
-
   padding-top: 12px;
   padding-bottom: 16px;
-
   font-size: 14px;
   line-height: 19px;
 }
@@ -75,7 +50,6 @@
   .card__header {
     max-width: 624px;
     min-height: 80px;
-
     font-size: 24px;
     line-height: 24px;
   }
@@ -103,10 +77,8 @@
 
   .card__text {
     width: 624px;
-
     padding-top: 16px;
     padding-bottom: 24px;
-
     font-size: 18px;
     line-height: 24px;
   }

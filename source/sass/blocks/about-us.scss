@@ -1,12 +1,11 @@
 .about-us {
   padding-top: 40px;
   padding-bottom: 40px;
-
-  background-color: #ffffff;
   background-image: url("../../img/about-us-small.png"),
     linear-gradient(12deg, #ffffff 19%, #f3e5ff 40%, #ffd3e6 65%, #ffffff 89%);
-  background-repeat: no-repeat;
   background-position: 50% 15%;
+  background-repeat: no-repeat;
+  background-color: #ffffff;
 }
 .about-us__text {
   font-size: 14px;
@@ -19,24 +18,19 @@
 
 .about-us__text-header {
   width: 300px;
-
   margin-bottom: 8px;
-
+  color: $main-black;
   font-size: 26px;
   line-height: 33px;
   word-break: break-word;
-
-  color: $main-black;
 }
 
 .about-us__header {
   margin-bottom: 344px;
-
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 23px;
-
   color: $main-black;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
 }
 
 .about-us__reservetion-button {
@@ -55,11 +49,9 @@
 .about-us__text-body {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   flex-wrap: wrap;
-
+  justify-content: space-between;
   min-height: 180px;
-
   margin-bottom: 40px;
 }
 
@@ -67,8 +59,6 @@
   .about-us {
     padding-top: 80px;
     padding-bottom: 80px;
-
-    background-color: #ffd3e6;
     background-image: url("../../img/about-us-medium.png"),
       linear-gradient(
         17deg,
@@ -80,10 +70,10 @@
       );
 
     background-position: 50% 22%;
+    background-color: #ffd3e6;
   }
   .about-us__header {
     margin-bottom: 568px;
-
     font-size: 36px;
     line-height: 40px;
   }
@@ -95,9 +85,7 @@
 
   .about-us__text-header {
     width: 550px;
-
     margin-bottom: 16px;
-
     font-size: 36px;
     line-height: 40px;
   }
@@ -116,12 +104,8 @@
   .about-us {
     display: flex;
     flex-direction: row;
-
     min-height: 800px;
     padding-right: 153px;
-
-    background-color: #ffd3e6;
-    background-color: #ffd3e6;
     background-image: url("../../img/about-us-big.png"),
       linear-gradient(
         17deg,
@@ -133,6 +117,8 @@
       );
 
     background-position: 4% 87%;
+    background-color: #ffd3e6;
+    background-color: #ffd3e6;
   }
 
   .about-us__header {

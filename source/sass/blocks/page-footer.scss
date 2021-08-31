@@ -1,20 +1,16 @@
 .page-footer {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   align-items: center;
-
+  justify-content: space-between;
   padding: 16px 40px 23px 21px;
-
   border-bottom-right-radius: 16px;
   border-bottom-left-radius: 16px;
-
   background-color: $blue;
 }
 
 .page-footer__logo {
   display: inline-block;
-
   width: 75px;
   height: 19px;
 }
@@ -26,38 +22,33 @@
 
 .page-footer__copyright {
   width: 168px;
-
+  color: $main-white;
   font-size: 14px;
   line-height: 19px;
-  color: $main-white;
 }
 
 .page-footer__text-get-back {
   position: relative;
-
   max-width: 50px;
-
   padding-top: 7px;
-
+  color: $main-white;
   font-size: 14px;
   line-height: 19px;
   text-transform: capitalize;
-  color: $main-white;
 
   cursor: pointer;
 
   &::after {
-    content: "";
-
     display: inline-block;
-    width: 16px;
-    height: 16px;
 
     position: absolute;
     top: 6px;
     left: 52px;
+    width: 16px;
+    height: 16px;
 
     background-image: url("../img/icon-arrow-up.svg");
+    content: "";
   }
 }
 
@@ -81,9 +72,9 @@
 
   .page-footer__text-get-back {
     max-width: 155px;
-    text-transform: none;
     font-size: 18px;
     line-height: 24px;
+    text-transform: none;
 
     &::after {
       top: 8px;

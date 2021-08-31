@@ -1,6 +1,5 @@
 .reviews {
   padding: 40px 8px 15px 8px;
-  background-color: #ffd3e6;
   background-image: linear-gradient(
     57deg,
     #ffd3e6 0%,
@@ -9,15 +8,16 @@
     #ffd3e6 90%,
     #eebcff 100%
   );
+  background-color: #ffd3e6;
 }
 
 .reviews__header {
   margin-bottom: 40px;
-  padding-left: 30px;
   padding-right: 30px;
+  padding-left: 30px;
   color: $main-black;
-  font-size: 18px;
   font-weight: 500;
+  font-size: 18px;
   line-height: 23px;
   word-break: break-word;
 }

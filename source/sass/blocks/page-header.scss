@@ -11,14 +11,14 @@
 
 .page-header__nav-toggle {
   position: absolute;
-  left: 8px;
   top: 14px;
+  left: 8px;
 }
 
 .page-header__user-list {
   position: absolute;
-  left: 300px;
   top: 12px;
+  left: 300px;
 }
 
 @media (min-width: $tablet-width) {
@@ -43,8 +43,8 @@
   }
 
   .page-header__user-list {
-    left: 444px;
     top: 16px;
+    left: 444px;
   }
 }
 
@@ -52,7 +52,6 @@
   .page-header {
     display: flex;
     justify-content: space-between;
-
     padding-top: 16px;
     padding-bottom: 16px;
   }
