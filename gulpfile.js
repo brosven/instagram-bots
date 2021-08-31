@@ -61,6 +61,7 @@ function serverStart () {
       });
 
     watch(["source/sass/**/*.{scss,sass}"], css);
+    watch(["source/img/icon-*.svg"], series(sprite, server.reload))
     watch(["source/*.html"]).on("change", server.reload);
 };
 
