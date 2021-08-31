@@ -64,9 +64,11 @@ function serverStart () {
     watch(["source/*.html"]).on("change", server.reload);
 };
 
+const build = series(sprite, css)
 exports.css = css;
 exports.serverStart = serverStart;
 exports.sprite = sprite;
 exports.cssSort = cssSort;
-exports.start = series(sprite, css, serverStart);
+exports.build = build;
+exports.start = series(build, serverStart);
 
