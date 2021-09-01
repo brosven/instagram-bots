@@ -40,6 +40,11 @@
   cursor: pointer;
 }
 
+.main-nav__btn-lang {
+  width: 110px;
+  min-height: 35px;
+}
+
 .main-nav__btn-text {
   font-size: 36px;
   &:hover {
@@ -59,6 +64,10 @@
   .main-nav__btn-text {
     font-size: 56px;
     line-height: 70px;
+  }
+
+  .main-nav__btn-lang {
+    width: 170px;
   }
 
   .main-nav__site-list {
