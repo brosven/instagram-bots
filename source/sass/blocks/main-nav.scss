@@ -13,6 +13,8 @@
   height: 32px;
   background-image: url("../img/icon-sandwich.svg");
   background-position: 50% 43%;
+  background-size: 70%;
+  background-repeat: no-repeat;
 
   &:hover {
     opacity: 0.8;
@@ -61,6 +63,10 @@
 
   .main-nav__site-list {
     padding-bottom: 156px;
+  }
+
+  .main-nav__toggle {
+    background-size: 100%;
   }
 }
 
